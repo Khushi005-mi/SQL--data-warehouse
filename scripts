@@ -1,3 +1,35 @@
+# Purpose of Script
+
+1. DROP DATABASE
+→ Deletes old warehouse
+
+2. CREATE DATABASE
+→ Creates fresh warehouse
+
+3. USE Datawarehouse
+→ Selects working database
+
+4. CREATE SCHEMA bronze
+→ Raw data layer
+(unprocessed source data)
+
+5. CREATE SCHEMA silver
+→ Cleaned data layer
+(transformed + validated data)
+
+6. CREATE SCHEMA gold
+→ Business analytics layer
+(reporting + dashboards + KPIs)
+
+Flow:
+Bronze → Silver → Gold
+
+Meaning:
+Raw Data → Clean Data → Business Insights
+
+
+DROP DATABASE IF EXISTS Datawarehouse;
+
 CREATE DATABASE Datawarehouse;
 
 USE Datawarehouse;
